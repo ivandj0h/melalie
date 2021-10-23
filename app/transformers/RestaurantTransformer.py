@@ -10,11 +10,12 @@ def transform(items):
 
 
 def singleTransform(values):
-
     return {
         "id": str(values.id),
-        "title": str(values.title),
-        "description": str(values.description) if values.description else "",
+        "name": values.name,
+        "location": values.location,
+        "balance": values.balance,
+        "business_hours": values.business_hours,
         "owner_id": str(values.owner.id) if values.owner else "",
         "owner": UserTransformer.singleTransform(values.owner.fetch())
         if values.owner else {}
