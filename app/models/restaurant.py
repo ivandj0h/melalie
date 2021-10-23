@@ -6,7 +6,7 @@ from app.models.user import Users
 
 
 class Restaurants(Document):
-    name = StringField(max_length=200, required=True)
+    name = StringField()
     location = StringField()
     balance = StringField()
     business_hours = StringField()
