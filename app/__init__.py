@@ -6,7 +6,7 @@ from app.routers import users, todos
 
 app = FastAPI()
 
-mongodb = connect('mongodb', host='mongodb://localhost/test_db', maxPoolSize=10)
+mongodb = connect('mongodb', host='mongodb://localhost:27017/test_db', maxPoolSize=10)
 client = TestClient(app)
 
 app.include_router(users.router, prefix="/users", tags=["User Docs"], )

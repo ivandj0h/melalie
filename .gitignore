@@ -144,3 +144,5 @@ cython_debug/
 .pyc
 
 Lib/*
+
+Scripts/
