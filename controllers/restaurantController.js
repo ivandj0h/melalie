@@ -4,7 +4,8 @@ import Restaurant from "../models/Restaurant.js";
 // get All Restaurants
 export const getAllRestaurants = async (req, res) => {
     try {
-        const restaurants = await Restaurant.find()
+
+        const restaurants = await Restaurant.find().limit(10)
         res.status(200).json(restaurants)
     } catch (error) {
         res.status(500).json({
@@ -13,6 +14,23 @@ export const getAllRestaurants = async (req, res) => {
     }
 }
 
+// function get All Restaurant that are open at a certain Datetime
+export const getAllRestaurantsBySearch = async (req, res) => {
+    try {
+        const filterSearch = req.body
+
+        const restaurants = await Restaurant.find({
+            $text: {
+                $search: filterSearch.business_hours
+            }
+        }).limit(10)
+        res.status(200).json(restaurants)
+    } catch (error) {
+        res.status(500).json({
+            message: error.message
+        })
+    }
+}
 
 // function get single Restaurant
 export const getRestaurantById = async (req, res) => {
