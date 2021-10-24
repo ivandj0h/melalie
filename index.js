@@ -35,7 +35,7 @@ app.use('/', indexRouter);
 // SwaggerUI - Restaurants
 /**
  * @swagger
- * /restaurants:
+ * /api/restaurants:
  *   get:
  *     description: get All Restaurants
  *     responses:
@@ -43,10 +43,7 @@ app.use('/', indexRouter);
  *         description: Success
  * 
  */
-app.get('/restaurants', (req, res) => {
-    res.redirect(307, '/api/restaurants');
-});
-app.use('/api/restaurants', cors(), restaurantRouter);
+
 // ---------------------------------------------------------------------- //
 
 /**
@@ -72,6 +69,77 @@ app.use('/api/restaurants', cors(), restaurantRouter);
  *         description: Search Success
  */
 
+/**
+ * @swagger
+ * /api/restaurants/{id}:
+ *   get:
+ *     description: Get all Open Restaurant by ID.
+ *       - application/json
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         description: find by ID
+ *         schema:
+ *           type: string
+ *           required: true
+ *     responses:
+ *       200:
+ *         description: Success
+ * 
+ */
+
+/**
+ * @swagger
+ * /api/restaurants/resto-dishes:
+ *   post:
+ *     description: Search for restaurants name, ranked by relevance to search term
+ *     consumes:
+ *      - application/json
+ *     parameters:
+ *      - in: body
+ *        name: Resto or Dishes
+ *        description: Input Anything related to Restaurant name or dishes
+ *        schema:
+ *         type: object
+ *         required:
+ *         - name
+ *         properties:
+ *           name:
+ *             type: string
+ *     responses:
+ *       200:
+ *         description: Search Success
+ */
+
+
+/**
+ * @swagger
+ * /api/restaurants/match-dishes:
+ *   post:
+ *     description: Search for restaurants that has a dish matching search term
+ *     consumes:
+ *      - application/json
+ *     parameters:
+ *      - in: body
+ *        name: Resto or Dishes
+ *        description: Input Anything related to dishes
+ *        schema:
+ *         type: object
+ *         required:
+ *         - name
+ *         properties:
+ *           name:
+ *             type: string
+ *     responses:
+ *       200:
+ *         description: Search Success
+ */
+
+
+app.get('/restaurants', (req, res) => {
+    res.redirect(307, '/api/restaurants');
+});
+app.use('/api/restaurants', cors(), restaurantRouter);
 
 // ---------------------------------------------------------------------- //
 
@@ -86,6 +154,18 @@ app.use('/api/restaurants', cors(), restaurantRouter);
  *         description: Success
  * 
  */
+
+/**
+ * @swagger
+ * /api/users/total-transaction:
+ *   get:
+ *     description: get All Users
+ *     responses:
+ *       200:
+ *         description: Success
+ * 
+ */
+
 app.get('/users', (req, res) => {
     res.redirect(307, '/api/users');
 });

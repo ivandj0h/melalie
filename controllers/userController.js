@@ -14,3 +14,28 @@ export const getAllUsers = async (req, res) => {
         })
     }
 }
+
+// Get Total Transaction
+export const getTotalTransaction = async (req, res) => {
+    try {
+        const topTenUserTransaction = await User.aggregate([
+            {
+                "$project": {
+                    "name": 1,
+                    "balance": 1,
+                    "TotalTransactions": {
+                        "$sum": { $toDecimal: { "$purchases": { "$amount": 1 } } }
+                    }
+                }
+            }
+        ])
+
+        console.log(topTenUserTransaction);
+
+        res.status(200).json(topTenUserTransaction)
+    } catch (error) {
+        res.status(500).json({
+            message: error.message
+        })
+    }
+}
