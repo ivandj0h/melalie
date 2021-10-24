@@ -4,8 +4,7 @@ import {
     getAllRestaurantsBySearch,
     getNearByRestaurants,
     getAllRestaurantsByOpenHours,
-    getRestaurantById,
-    saveRestaurant
+    getRestaurantById
 } from "../controllers/restaurantController.js";
 
 // express router
@@ -19,8 +18,6 @@ router.post('/', getAllRestaurantsBySearch);
 router.get('/open', getAllRestaurantsByOpenHours);
 // Route get single Restaurant
 router.get('/:id', getRestaurantById);
-// Route CREATE Restaurant
-router.post('/', saveRestaurant);
 
 // export router
 export default router;
