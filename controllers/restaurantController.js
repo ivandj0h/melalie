@@ -61,7 +61,6 @@ export const getAllRestaurantsByOpenHours = async (req, res) => {
     }
 }
 
-
 // function get All Restaurant that are open at a certain Datetime
 export const getAllRestaurantsByNumberOfDishes = async (req, res) => {
     try {
@@ -84,16 +83,4 @@ export const getRestaurantById = async (req, res) => {
         res.status(404).json({ message: error.message });
     }
 
-}
-
-
-// function Create Restaurant
-export const saveRestaurant = async (req, res) => {
-    const restaurant = new Restaurant(req.body);
-    try {
-        const savedRestaurant = await restaurant.save();
-        res.status(201).json(savedRestaurant);
-    } catch (error) {
-        res.status(400).json({ message: error.message });
-    }
 }
