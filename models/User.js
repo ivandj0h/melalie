@@ -1,5 +1,5 @@
 // import mongoose
-import { mongoose } from "mongoose";
+import mongoose from "mongoose";
 
 // Buat Schema
 const PurchaseSchema = new mongoose.Schema({
@@ -8,15 +8,12 @@ const PurchaseSchema = new mongoose.Schema({
     amount: String,
     date: Date
 })
+
 const User = mongoose.Schema({
     name: {
         type: String
     },
-    location: [
-        {
-            type: String
-        }
-    ],
+    // location: [{ type: String }],
     balance: {
         type: String
     },

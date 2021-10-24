@@ -3,6 +3,7 @@ import {
     getAllRestaurants,
     getAllRestaurantsBySearch,
     getNearByRestaurants,
+    getAllRestaurantsByOpenHours,
     getRestaurantById,
     saveRestaurant
 } from "../controllers/restaurantController.js";
@@ -14,6 +15,8 @@ const router = express.Router();
 router.get('/', getAllRestaurants);
 // Route get All Restaurants that are open at a certain Datetime
 router.post('/', getAllRestaurantsBySearch);
+// Route get All Restaurants that are open at a certain Datetime
+router.get('/open', getAllRestaurantsByOpenHours);
 // Route get single Restaurant
 router.get('/:id', getRestaurantById);
 // Route CREATE Restaurant
