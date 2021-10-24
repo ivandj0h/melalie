@@ -27,7 +27,7 @@ db.once('open', () => console.log('Database Connected!'));
 app.use(cors());
 app.use(morgan('tiny'));
 app.use(express.json());
-app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
+app.use('/api/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use('/', indexRouter);
 
 // ---------------------------------------------------------------------- //
@@ -43,6 +43,9 @@ app.use('/', indexRouter);
  *         description: Success
  * 
  */
+app.get('/restaurants', (req, res) => {
+    res.redirect(307, '/api/restaurants');
+});
 app.use('/api/restaurants', cors(), restaurantRouter);
 // ---------------------------------------------------------------------- //
 

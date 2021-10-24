@@ -15,7 +15,7 @@ https://nginx1.ivandjoh.online/api/
 to test the <b>Endpoint</b> Online, just navigate to this <b>Documentation</b> :
 
 ```
-https://nginx1.ivandjoh.online/docs/
+https://nginx1.ivandjoh.online/api/docs/
 ```
 
 
