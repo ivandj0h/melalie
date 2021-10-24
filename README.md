@@ -8,12 +8,16 @@
 
 [![Build Status](https://travis-ci.org/iolufemi/Express-REST-API-Generator.svg?branch=dev)](https://travis-ci.org/iolufemi/Express-REST-API-Generator)  [![codecov](https://codecov.io/gh/iolufemi/Express-REST-API-Generator/branch/master/graph/badge.svg)](https://codecov.io/gh/iolufemi/Express-REST-API-Generator) [![Documentation Status](https://readthedocs.org/projects/api-template/badge/?version=latest)](http://api-template.readthedocs.io/en/latest/?badge=latest)
 
-`Melalie Application` is a backend service (API and database) for a food delivery app.
-
-You can find this application online through this link below :
+`Melalie Application` is a backend service (API and database) for a food delivery app and you can find this application online through this link below :
 ```
 https://nginx1.ivandjoh.online/api/
 ```
+to test the <b>Endpoint</b> Online, just navigate to this <b>Documentation</b> :
+
+```
+https://nginx1.ivandjoh.online/docs/
+```
+
 
 This Application was Developed using several stacks such as :
 
@@ -41,9 +45,9 @@ unzip <zipped_file.zip> -d <unzipped_directory>
 <br />
 
 ## Run the Application
-```
+
 Before Running the Application, please make sure to import the databases from Datasets folder which is already been modified to avoid any errors when interract with Database into your MongoDB Database.
-```
+
 There are 2 ways to Run this application :
 
 1. <b>Run within Docker Container</b>
@@ -77,6 +81,18 @@ docker images
 
 docker ps
 (to see running container on your machine)
+```
+
+to test the <b>Endpoint</b> on your <b>Local</b> Machine, just navigate to this <b>Documentation</b> :
+
+<b>Use Docker</b>
+```
+http://localhost:1337/docs
+```
+
+<b>Not use Docker</b>
+```
+http://localhost:8080/docs
 ```
 
 
