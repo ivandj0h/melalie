@@ -43,12 +43,12 @@ app.use('/', indexRouter);
  *         description: Success
  * 
  */
-app.use('/restaurants', cors(), restaurantRouter);
+app.use('/api/restaurants', cors(), restaurantRouter);
 // ---------------------------------------------------------------------- //
 
 /**
  * @swagger
- * /restaurants:
+ * /api/restaurants:
  *   post:
  *     description: Get all Open Restaurant at certain datetime
  *     consumes:
@@ -75,7 +75,7 @@ app.use('/restaurants', cors(), restaurantRouter);
 // SwaggerUI - Users
 /**
  * @swagger
- * /users:
+ * /api/users:
  *   get:
  *     description: get All Users
  *     responses:
@@ -83,7 +83,10 @@ app.use('/restaurants', cors(), restaurantRouter);
  *         description: Success
  * 
  */
-app.use('/users', cors(), usersRouter);
+app.get('/users', (req, res) => {
+    res.redirect(307, '/api/users');
+});
+app.use('/api/users', cors(), usersRouter);
 
 
 // listening to port
