@@ -1,10 +1,9 @@
-## Melalie Application 👋
+# Melalie Application 👋
 
 
-<hr />
 <br />
 
-### Getting Started
+## Getting Started
 [![Build Status](https://travis-ci.org/iolufemi/Express-REST-API-Generator.svg?branch=dev)](https://travis-ci.org/iolufemi/Express-REST-API-Generator)  [![codecov](https://codecov.io/gh/iolufemi/Express-REST-API-Generator/branch/master/graph/badge.svg)](https://codecov.io/gh/iolufemi/Express-REST-API-Generator) [![Documentation Status](https://readthedocs.org/projects/api-template/badge/?version=latest)](http://api-template.readthedocs.io/en/latest/?badge=latest)
 
 `Melalie Application` is a backend service (API and database) for a food delivery app.
@@ -15,17 +14,65 @@ This Application was Developed using several stacks such as :
 
 * [ExpressJS](https://expressjs.com) ( As a Framework for NodeJS )
 * [MongoDB](https://mongodb.com) ( As a NoSQL Database )
-* [Swagger](https://swagger.io/) ( As a API Documentation )
+* [Swagger](https://swagger.io) ( As a API Documentation )
+* [Docker](https://www.docker.com) ( As a Containerization )
 
 <hr />
 <br />
 
-### Installation
+## Installation
 To start this project, just clone the repository from GitHub and install the dependencies.
 
 ```
 $ git clone https://github.com/ivandi1980/melalie.git 
 ```
+If you download directly from git, the you've to extract using tools like <b>7zip</b> or <b>Winrar</b> for windows user, but if you're using Linux then you just type :
+```bash
+unzip <zipped_file.zip> -d <unzipped_directory>
+```
+<hr />
+<br />
+## Run the Application
+
+There are 2 ways to Run this application :
+
+1. <b>Run within Docker Container</b>
+
+To run this application, please make sure you already have :
+- Docker Installed on your machine
+- Nodejs Installed on your machine
+- MongoDB Installed on your machine
+- Rest Client for Api testing ( Optional )
+
+if it so, the simply follow the steps below :
+
+
+* Run Docker Build
+```
+docker-build -t melalie:1.0.0 .
+```
+* Run The Container
+```
+docker run -p 1337:8080 melalie:1.0.0
+```
+* stop the Container
+```
+docker stop <container_id>
+```
+
+Here are several Docker Commands (additional)
+```
+docker images
+(to see the images on your machine)
+
+docker ps
+(to see running container on your machine)
+```
+
+
+2. <b>Run without Docker Container</b>
+
+If you want to run without using Docker Container, just follow these steps below :
 ```
 $ cd melalie
 ```
@@ -38,8 +85,6 @@ $ npm run dev (development)
 ```
 $ npm start (production)
 ```
-
-
 ### Author
 
 **Ivandjoh**

@@ -1,0 +1,455 @@
+[
+  {
+    "name": "Orange House",
+    "location": [
+      "-8.65504",
+      "115.110801"
+    ],
+    "balance": "4483.84",
+    "business_hours": "Sunday: 10:45 AM - 5 PM | Monday, Friday: 2:30 PM - 8 PM | Tuesday: 11 AM - 2 PM | Wednesday: 1:15 PM - 3:15 AM | Thursday: 10 AM - 3:15 AM | Saturday: 5 AM - 11:30 AM",
+    "menu": [
+      {
+        "name": "Kiwiberries",
+        "price": "10.64"
+      },
+      {
+        "name": "Dates",
+        "price": "12.45"
+      },
+      {
+        "name": "Arborio Rice",
+        "price": "10.59"
+      },
+      {
+        "name": "Figs juice",
+        "price": "13.5"
+      },
+      {
+        "name": "Papaya",
+        "price": "13.5"
+      },
+      {
+        "name": "Watermelon",
+        "price": "12.56"
+      },
+      {
+        "name": "Budweiser Wood-aged Beer",
+        "price": "12.38"
+      },
+      {
+        "name": "Oranges",
+        "price": "11.64"
+      },
+      {
+        "name": "Pears smoothie",
+        "price": "10.51"
+      },
+      {
+        "name": "French Toast",
+        "price": "10.2"
+      },
+      {
+        "name": "Jarrahdale pumpkin",
+        "price": "14.0"
+      },
+      {
+        "name": "Papaw",
+        "price": "11.79"
+      },
+      {
+        "name": "Salmon Nigiri",
+        "price": "10.15"
+      },
+      {
+        "name": "Goji Berry smoothie",
+        "price": "13.88"
+      }
+    ]
+  },
+  {
+    "name": "34 Grill & Tap",
+    "location": [
+      "-8.679412,115.136036"
+    ],
+    "balance": "4882.81",
+    "business_hours": "Sun, Fri: 6 AM - 9 PM | Mon, Weds: 11:45 AM - 4:45 PM | Tues: 7:45 AM - 2 AM | Thurs: 5:45 PM - 12 AM | Sat: 10:15 AM - 9 PM",
+    "menu": [
+      {
+        "name": "Goji Berry smoothie",
+        "price": "13.57"
+      },
+      {
+        "name": "Goji Berry juice",
+        "price": "10.15"
+      },
+      {
+        "name": "Caramel Pudding with Peanuts",
+        "price": "10.25"
+      },
+      {
+        "name": "Westmalle Trappist Tripel",
+        "price": "11.15"
+      },
+      {
+        "name": "Ricotta Stuffed Ravioli",
+        "price": "10.25"
+      },
+      {
+        "name": "Hoegaarden English Brown Ale",
+        "price": "10.35"
+      },
+      {
+        "name": "Celery",
+        "price": "12.34"
+      },
+      {
+        "name": "Dill",
+        "price": "11.09"
+      },
+      {
+        "name": "Walnut",
+        "price": "12.0"
+      },
+      {
+        "name": "Tomatoes juice",
+        "price": "13.86"
+      },
+      {
+        "name": "Chicken Parm",
+        "price": "10.25"
+      },
+      {
+        "name": "Bush Tomato smoothie",
+        "price": "10.1"
+      }
+    ]
+  },
+  {
+    "name": "76 King",
+    "location": [
+      "-8.832813,115.130664"
+    ],
+    "balance": "1320.19",
+    "business_hours": "Sunday: 2 PM - 7 PM | Monday, Wednesday: 3:45 PM - 5 PM | Tuesday: 11:30 AM - 3 AM | Thursday: 10 AM - 11:30 PM | Friday: 7 AM - 9:45 AM | Saturday: 12:45 PM - 1:15 PM",
+    "menu": [
+      {
+        "name": "Figs",
+        "price": "13.95"
+      },
+      {
+        "name": "Feijoa smoothie",
+        "price": "11.95"
+      },
+      {
+        "name": "Founders Kentucky Breakfast",
+        "price": "12.81"
+      },
+      {
+        "name": "Red Stripe English Brown Ale",
+        "price": "12.13"
+      },
+      {
+        "name": "Lemon",
+        "price": "11.0"
+      },
+      {
+        "name": "Longan juice",
+        "price": "10.1"
+      },
+      {
+        "name": "Kebab",
+        "price": "12.13"
+      },
+      {
+        "name": "Hercules Double IPA",
+        "price": "13.3"
+      },
+      {
+        "name": "Juniper Berries smoothie",
+        "price": "12.8"
+      }
+    ]
+  },
+  {
+    "name": "Sweet Steakhouse",
+    "location": [
+      "-8.598099,115.167311"
+    ],
+    "balance": "4629.91",
+    "business_hours": "Sun: 1:15 PM - 12:30 AM | Mon: 5:30 AM - 6 PM | Tue: 10 AM - 12:15 AM | Wed: 1:45 PM - 4:45 PM | Thu: 7:15 AM - 3:45 AM | Fri: 1:30 PM - 12:45 AM | Sat: 7 AM - 11:45 AM",
+    "menu": [
+      {
+        "name": "Peanut Butter Cake with Chocolate Syrup",
+        "price": "10.9"
+      },
+      {
+        "name": "Mandarins juice",
+        "price": "10.3"
+      },
+      {
+        "name": "Dragonfruit",
+        "price": "13.3"
+      }
+    ]
+  },
+  {
+    "name": "Green Coffee",
+    "location": [
+      "-8.795632,115.125848"
+    ],
+    "balance": "2614.96",
+    "business_hours": "Sunday: 12:45 PM - 6:15 PM | Monday, Wednesday: 5:15 AM - 8:30 PM | Tuesday, Saturday: 1:30 PM - 3:45 PM | Thursday: 7:45 AM - 8:15 AM | Friday: 1:30 PM - 7 PM",
+    "menu": [
+      {
+        "name": "Pabst Blue Ribbon Porter",
+        "price": "12.93"
+      },
+      {
+        "name": "Caesar Salad",
+        "price": "10.43"
+      },
+      {
+        "name": "Blondie Cake with Granola",
+        "price": "10.7"
+      },
+      {
+        "name": "Guava juice",
+        "price": "11.76"
+      },
+      {
+        "name": "Risotto with Seafood",
+        "price": "11.17"
+      }
+    ]
+  },
+  {
+    "name": "Blue Bar & Grill",
+    "location": [
+      "-8.816938,115.214743"
+    ],
+    "balance": "3478.03",
+    "business_hours": "Sun: 5 PM - 3:45 AM | Mon: 1:45 PM - 3 PM | Tue: 8:45 AM - 2:15 AM | Wed: 6:45 AM - 10:45 AM | Thu, Sat: 5:45 AM - 11:15 AM | Fri: 3:45 PM - 2:30 AM",
+    "menu": [
+      {
+        "name": "Cavalo juice",
+        "price": "15.75"
+      },
+      {
+        "name": "Hercules Double IPA",
+        "price": "10.35"
+      },
+      {
+        "name": "French Toast",
+        "price": "12.0"
+      },
+      {
+        "name": "Starfruit smoothie",
+        "price": "12.06"
+      },
+      {
+        "name": "Strawberries smoothie",
+        "price": "13.95"
+      },
+      {
+        "name": "Kiwi Fruit smoothie",
+        "price": "13.64"
+      },
+      {
+        "name": "Cannellini Beans",
+        "price": "13.95"
+      },
+      {
+        "name": "Som Tam",
+        "price": "10.75"
+      },
+      {
+        "name": "Chocolate Frozen Yogurt with Mocha Drizzle",
+        "price": "13.08"
+      },
+      {
+        "name": "Loquats",
+        "price": "13.26"
+      }
+    ]
+  },
+  {
+    "name": "Blue Deli",
+    "location": [
+      "-8.775653,115.261101"
+    ],
+    "balance": "960.2",
+    "business_hours": "Sunday: 10:45 AM - 3:45 PM | Monday: 5 PM - 10:30 PM | Tuesday, Saturday: 5 PM - 6:45 PM | Wednesday-Thursday: 3:15 PM - 3:45 AM | Friday: 9:15 AM - 10:45 AM",
+    "menu": [
+      {
+        "name": "Chocolate Parfait with Cheesecake Bites",
+        "price": "10.25"
+      },
+      {
+        "name": "Prunes smoothie",
+        "price": "12.42"
+      },
+      {
+        "name": "Mango juice",
+        "price": "10.5"
+      },
+      {
+        "name": "Oysters",
+        "price": "13.0"
+      },
+      {
+        "name": "Kudzu",
+        "price": "11.14"
+      },
+      {
+        "name": "Tangelo",
+        "price": "10.17"
+      },
+      {
+        "name": "Custard Apples smoothie",
+        "price": "10.4"
+      },
+      {
+        "name": "Hoegaarden Smoke-flavored",
+        "price": "10.75"
+      },
+      {
+        "name": "Rockmelon smoothie",
+        "price": "13.89"
+      },
+      {
+        "name": "Grape Seed Oil",
+        "price": "10.24"
+      },
+      {
+        "name": "Jarrahdale Pumpkin",
+        "price": "12.3"
+      },
+      {
+        "name": "Vanilla Pie with Walnuts",
+        "price": "12.2"
+      },
+      {
+        "name": "Poke",
+        "price": "12.82"
+      },
+      {
+        "name": "Lemon Brownie with Chocolate Chips",
+        "price": "10.05"
+      }
+    ]
+  },
+  {
+    "name": "24 Brasserie",
+    "location": [
+      "-8.584788,115.206498"
+    ],
+    "balance": "4841.8",
+    "business_hours": "Sun: 7 AM - 4:15 PM | Mon, Weds: 11 AM - 9 PM | Thurs: 6 AM - 9 PM | Fri: 12:15 PM - 7 PM | Sat: 2:45 PM - 1:30 AM",
+    "menu": [
+      {
+        "name": "Prunes",
+        "price": "10.75"
+      },
+      {
+        "name": "Maple Syrup",
+        "price": "11.16"
+      },
+      {
+        "name": "Strawberry Ice Cream with Caramel",
+        "price": "10.29"
+      },
+      {
+        "name": "Ebiten maki",
+        "price": "11.58"
+      },
+      {
+        "name": "Pho",
+        "price": "10.26"
+      },
+      {
+        "name": "Limes smoothie",
+        "price": "11.25"
+      },
+      {
+        "name": "Trappistes Rochefort 8",
+        "price": "10.09"
+      },
+      {
+        "name": "Tom Yum",
+        "price": "12.79"
+      },
+      {
+        "name": "Tsingtao Amber Hybrid Beer",
+        "price": "12.53"
+      }
+    ]
+  },
+  {
+    "name": "Golden Steakhouse",
+    "location": [
+      "-8.744696,115.22638"
+    ],
+    "balance": "3211.97",
+    "business_hours": "Sunday: 6:30 AM - 8:15 AM | Monday: 6 AM - 8:30 PM | Tuesday-Wednesday: 6:45 AM - 3 PM | Thursday: 6:15 AM - 8:30 AM | Friday: 4 PM - 10:15 PM | Saturday: 1:30 PM - 11:45 PM",
+    "menu": [
+      {
+        "name": "Rhubarb",
+        "price": "11.51"
+      },
+      {
+        "name": "Samuel Smith’s Oatmeal Stout",
+        "price": "10.94"
+      },
+      {
+        "name": "Nashi Pear",
+        "price": "13.94"
+      },
+      {
+        "name": "Heineken Scottish And Irish Ale",
+        "price": "11.25"
+      },
+      {
+        "name": "Cheeseburger",
+        "price": "11.97"
+      },
+      {
+        "name": "Semolina",
+        "price": "10.06"
+      },
+      {
+        "name": "Mandarins smoothie",
+        "price": "11.48"
+      }
+    ]
+  },
+  {
+    "name": "Green Coffee",
+    "location": [
+      "-8.760077,115.252335"
+    ],
+    "balance": "4260.93",
+    "business_hours": "Sun: 8:30 AM - 2 AM | Mon: 4:30 PM - 11:15 PM | Tues, Sat: 3:30 PM - 5 PM | Weds: 5:15 AM - 9:30 PM | Thurs: 1 PM - 2:15 PM | Fri: 6:45 AM - 7:45 AM",
+    "menu": [
+      {
+        "name": "Snowpeas juice",
+        "price": "10.5"
+      },
+      {
+        "name": "Ruination IPA",
+        "price": "12.44"
+      },
+      {
+        "name": "Sapporo Premium",
+        "price": "10.55"
+      },
+      {
+        "name": "Hennepin",
+        "price": "10.6"
+      },
+      {
+        "name": "Jarrahdale pumpkin juice",
+        "price": "10.45"
+      }
+    ]
+  }
+]
