@@ -4,6 +4,8 @@
 <br />
 
 ## Getting Started
+
+
 [![Build Status](https://travis-ci.org/iolufemi/Express-REST-API-Generator.svg?branch=dev)](https://travis-ci.org/iolufemi/Express-REST-API-Generator)  [![codecov](https://codecov.io/gh/iolufemi/Express-REST-API-Generator/branch/master/graph/badge.svg)](https://codecov.io/gh/iolufemi/Express-REST-API-Generator) [![Documentation Status](https://readthedocs.org/projects/api-template/badge/?version=latest)](http://api-template.readthedocs.io/en/latest/?badge=latest)
 
 `Melalie Application` is a backend service (API and database) for a food delivery app.
@@ -39,7 +41,9 @@ unzip <zipped_file.zip> -d <unzipped_directory>
 <br />
 
 ## Run the Application
-
+```
+Before Running the Application, please make sure to import the databases from Datasets folder which is already been modified to avoid any errors when interract with Database into your MongoDB Database.
+```
 There are 2 ways to Run this application :
 
 1. <b>Run within Docker Container</b>
@@ -55,7 +59,7 @@ if it so, the simply follow the steps below :
 
 * Run Docker Build
 ```
-docker-build -t melalie:1.0.0 .
+docker build -t melalie:1.0.0 .
 ```
 * Run The Container
 ```
