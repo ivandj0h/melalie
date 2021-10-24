@@ -3,28 +3,24 @@ import mongoose from "mongoose";
 
 // Buat Schema
 const MenuSchema = new mongoose.Schema({ name: String, price: String });
+const LocSchema = new mongoose.Schema([])
 const Restaurant = mongoose.Schema({
     name: {
-        type: String,
-        required: true
+        type: String
     },
-    location: {
-        type: String,
-        required: true
-    },
+    location: [
+        {
+            type: String
+        }
+    ],
     balance: {
-        type: String,
-        required: true
+        type: String
     },
     business_hours: {
-        type: String,
-        required: true
+        type: String
     },
     menu: [MenuSchema]
-    // },
-    //     { typeKey: '$type' }
 });
-// Restaurant.index({ business_hours: "text" });
 
 // export model
 export default mongoose.model('Restaurants', Restaurant);
