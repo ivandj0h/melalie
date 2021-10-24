@@ -14,7 +14,7 @@ import restaurantRouter from "./routes/restaurant.js";
 mongoose.connect(connect.databaseUri, mongoRules);
 const db = mongoose.connection;
 db.on('error', (error) => console.error(error));
-db.once('open', () => console.log('Database Connected'));
+db.once('open', () => console.log('Database Connected!'));
 
 // middleware 
 app.use(cors());
@@ -24,4 +24,4 @@ app.use('/', indexRouter);
 app.use('/restaurants', restaurantRouter);
 
 // listening to port
-app.listen(connect.applicationPort, () => console.log(`Server Running at port: ${connect.applicationPort}`));
+app.listen(connect.applicationPort, () => console.log(`Server Running at ${connect.applicationUri}:${connect.applicationPort}`));
