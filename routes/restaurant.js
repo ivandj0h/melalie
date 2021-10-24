@@ -2,6 +2,7 @@ import express from "express";
 import {
     getAllRestaurants,
     getAllRestaurantsBySearch,
+    getNearByRestaurants,
     getRestaurantById,
     saveRestaurant
 } from "../controllers/restaurantController.js";

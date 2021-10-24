@@ -32,6 +32,20 @@ export const getAllRestaurantsBySearch = async (req, res) => {
     }
 }
 
+// function List all restaurants within the vicinity of the user’s location
+export const getNearByRestaurants = async (req, res) => {
+    try {
+        const lat = req.body.lat
+        const lng = req.body.lng
+
+        const restaurant = await Restaurant.find();
+        res.json(restaurant);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+
+}
+
 // function get single Restaurant
 export const getRestaurantById = async (req, res) => {
     try {
