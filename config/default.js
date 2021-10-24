@@ -11,5 +11,6 @@ export const connect = {
 
 export const mongoRules = {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    dbName: "melalie"
 }
