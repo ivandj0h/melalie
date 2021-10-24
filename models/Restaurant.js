@@ -18,9 +18,13 @@ const Restaurant = mongoose.Schema({
     },
     business_hours: {
         type: String,
+        required: true
     },
     menu: [MenuSchema]
+    // },
+    //     { typeKey: '$type' }
 });
+// Restaurant.index({ business_hours: "text" });
 
 // export model
 export default mongoose.model('Restaurants', Restaurant);
