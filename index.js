@@ -27,10 +27,64 @@ db.once('open', () => console.log('Database Connected!'));
 app.use(cors());
 app.use(morgan('tiny'));
 app.use(express.json());
-app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use('/', indexRouter);
+
+// ---------------------------------------------------------------------- //
+
+// SwaggerUI - Restaurants
+/**
+ * @swagger
+ * /restaurants:
+ *   get:
+ *     description: get All Restaurants
+ *     responses:
+ *       200:
+ *         description: Success
+ * 
+ */
 app.use('/restaurants', cors(), restaurantRouter);
+// ---------------------------------------------------------------------- //
+
+/**
+ * @swagger
+ * /restaurants:
+ *   post:
+ *     description: Get all Open Restaurant at certain datetime
+ *     consumes:
+ *      - application/json
+ *     parameters:
+ *      - in: body
+ *        name: Day or Hours
+ *        description: Input Anything related to The Business Day/Hours
+ *        schema:
+ *         type: object
+ *         required:
+ *         - business_hours
+ *         properties:
+ *           business_hours:
+ *             type: string
+ *     responses:
+ *       200:
+ *         description: Search Success
+ */
+
+
+// ---------------------------------------------------------------------- //
+
+// SwaggerUI - Users
+/**
+ * @swagger
+ * /users:
+ *   get:
+ *     description: get All Users
+ *     responses:
+ *       200:
+ *         description: Success
+ * 
+ */
 app.use('/users', cors(), usersRouter);
+
 
 // listening to port
 app.listen(connect.applicationPort, async () => {
