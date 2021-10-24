@@ -8,6 +8,11 @@
 
 `Melalie Application` is a backend service (API and database) for a food delivery app.
 
+You can find this application online through this link below :
+```
+https://nginx1.ivandjoh.online/api/
+```
+
 This Application was Developed using several stacks such as :
 
 * [NodeJS](https://nodejs.org) ( As a backend language )
@@ -32,6 +37,7 @@ unzip <zipped_file.zip> -d <unzipped_directory>
 ```
 <hr />
 <br />
+
 ## Run the Application
 
 There are 2 ways to Run this application :
