@@ -20,12 +20,9 @@ export const getTotalTransaction = async (req, res) => {
     try {
         const topTenUserTransaction = await User.aggregate([
             {
-                "$project": {
-                    "name": 1,
-                    "balance": 1,
-                    "TotalTransactions": {
-                        "$sum": { $toDecimal: { "$purchases": { "$amount": 1 } } }
-                    }
+                $group: {
+                    _id: "$id",
+                    count: { $sum: "$purchases.amount" }
                 }
             }
         ])
