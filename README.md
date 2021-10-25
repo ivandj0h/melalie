@@ -7,6 +7,8 @@
 
 
 [![Build Status](https://travis-ci.org/iolufemi/Express-REST-API-Generator.svg?branch=dev)](https://travis-ci.org/iolufemi/Express-REST-API-Generator)  [![codecov](https://codecov.io/gh/iolufemi/Express-REST-API-Generator/branch/master/graph/badge.svg)](https://codecov.io/gh/iolufemi/Express-REST-API-Generator) [![Documentation Status](https://readthedocs.org/projects/api-template/badge/?version=latest)](http://api-template.readthedocs.io/en/latest/?badge=latest)
+[![Docker Status](https://github.com/bchew/dynamodump/actions/workflows/docker.yml/badge.svg)](https://hub.docker.com/r/bchew/dynamodump)
+![Test Status](https://github.com/bchew/dynamodump/actions/workflows/test.yml/badge.svg)
 
 `Melalie Application` is a backend service (API and database) for a food delivery app and you can find this application online through this link below :
 ```
